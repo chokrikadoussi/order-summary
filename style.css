@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-weight: 500, 700, 900*/
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: url("images/pattern-background-desktop.svg") no-repeat;
+  background-size: 100% auto;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.container {
+  width: 450px;
+  border-radius: 1rem;
+  background-color: white;
+}
+.container #illustration {
+  border-radius: 1rem 1rem 0 0;
+}
+.container .title {
+  padding: 2rem 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container .subtitle {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  padding: 0 3rem;
+}
+.container .plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.container .plan .sub {
+  display: flex;
+}
+.container .plan .price {
+  padding-left: 1rem;
+}
+.container .plan .price h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  padding-bottom: 0.5vh;
+}
+.container .plan .price p {
+  color: hsl(224, 23%, 55%);
+}
+.container .plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.container .plan a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+/*# sourceMappingURL=style.css.map */

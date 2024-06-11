@@ -1,0 +1,87 @@
+$primary_pale_blue: hsl(225, 100%, 94%);
+$primary_bright_blue: hsl(245, 75%, 52%);
+$neutral_pale_blue: hsl(225, 100%, 98%);
+$neutral_desaturated_blue: hsl(224, 23%, 55%);
+$neutral_dark_blue: hsl(223, 47%, 23%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-weight: 500, 700, 900*/
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: 100% auto;
+    background-color: $primary_pale_blue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $neutral_dark_blue;
+}
+
+.container {
+    width: 450px;
+    border-radius: 1rem;
+    background-color: white;
+
+    #illustration {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .title {
+        padding: 2rem 0 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        color: $neutral_desaturated_blue;
+        text-align: center;
+        padding: 0 3rem;
+    }
+
+    .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $neutral_pale_blue;
+        margin: 1rem 2rem;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+
+        .sub {
+            display: flex;
+        }
+
+        .price {
+            padding-left: 1rem;
+
+            h2 {
+                font-size: 1rem;
+                font-weight: 900;
+                padding-bottom: 0.5vh;
+            }
+
+            p {
+                color: $neutral_desaturated_blue;
+            }
+        }
+
+        a {
+            color: $primary_bright_blue;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: none;
+                color: $neutral_desaturated_blue;
+            }
+        }
+
+    }
+}
