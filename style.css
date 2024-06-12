@@ -66,7 +66,63 @@ body {
 }
 .container .plan a:hover {
   text-decoration: none;
-  color: hsl(224, 23%, 55%);
+  opacity: 0.7;
+}
+.container .button-27 {
+  appearance: none;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+  font-weight: 700;
+  font-family: "Red Hat Display";
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: calc(100% - 4rem);
+  will-change: transform;
+  border: none;
+}
+.container .button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  opacity: 0.7;
+}
+.container .button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.container .cancel {
+  text-decoration: none;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  opacity: 0.7;
+  padding-bottom: 2rem;
+}
+.container .cancel:hover {
+  opacity: 1;
+  transform: scale(1.05) ease 0.3ms;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+  .container #illustration {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
